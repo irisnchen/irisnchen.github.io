@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Photos for Iris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Gill+Sans&display=swap" rel="stylesheet">
+    <style>
+        .large-only{
+                display:none;
+            }
+        body {
+            font-family: 'Gill Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            color: white;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            font-size:1.2em;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition:0.2s background-color, 0.2s color;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 150px 0 50px;
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* On larger screens, arrange boxes in a row */
+        @media(min-width: 768px) {
+            .large-only{
+                display:inline-block;
+            }
+            .box-container {
+                flex-direction: row;
+            }
+            main{
+                margin-top:0;
+            }
+            h1{
+                margin:200px 0 100px;
+            }
+            body{
+                overflow-y:hidden;
+            }
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            padding:20px;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .box:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Darkened background */
+            z-index: 0;
+            transition:0.2s background;
+        }
+
+        .box:hover:before {
+            background: rgba(0, 0, 0, 0.7); /* Further darken on hover */
+        }
+
+        .box span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Example background images for the boxes */
+        .box1 {
+            background-image: url('Images/uyghur6.jpg');
+        }
+
+        .box2 {
+            background-image: url('Images/rma3.jpg');
+        }
+
+        .box3 {
+            background-image: url('Images/Starbucks4.JPG');
+            background-position:top center;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a> <span class="large-only">| 
+    <a href="oral-history-project.html">Oral History Project</a> | 
+    <a href="rma-preservation-project.html">Rma Preservation Project</a> | 
+    <a href="silent-starbucks-guardians.html">Silent Starbucks Guardians</a></span>
+</nav>
+
+<main>
+    <h1>Nuo (Iris) Chen</h1>
+
+    <div class="box-container">
+        <a href="oral-history-project.html" class="box box1"><span>Oral History Project</span></a>
+        <a href="rma-preservation-project.html" class="box box2"><span>Rma Preservation Project</span></a>
+        <a href="silent-starbucks-guardians.html" class="box box3"><span>Silent Starbucks Guardians</span></a>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Photos for Iris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Gill+Sans&display=swap" rel="stylesheet">
+    <style>
+        .large-only{
+                display:none;
+            }
+        body {
+            font-family: 'Gill Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            color: white;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            font-size:1.2em;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition:0.2s background-color, 0.2s color;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 120px 0 50px;
+        }
+        #images{
+            width:80vw;
+            break-inside: avoid-column;
+            column-count: 1;
+            column-gap: 5vw;
+	    }
+        #images img{
+            width:80vw;
+        }
+        #images figure{ 
+            margin-bottom:20px;
+            width: 100%;
+            display: inline-block;
+
+        }
+        #images figcaption{
+            font-size:1.3em;
+        }
+
+        
+        @media(min-width: 768px) {
+            .large-only{
+                display:inline-block;
+            }
+            main{
+                margin-top:0;
+            }
+            h1{
+                margin:170px 0 50px;
+            }
+            
+            #images{
+                width:90vw;
+                margin:0 2.5vw;
+                column-count: 3;
+                column-gap: 3%;
+                transition: box-shadow 0.2s;
+            }
+            #images figure{
+                width:28vw;
+            }
+            #images img{
+                width:28vw;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a> <span class="large-only">| 
+    <a href="oral-history-project.html">Oral History Project</a> | 
+    <a href="rma-preservation-project.html">Rma Preservation Project</a> | 
+    <a href="silent-starbucks-guardians.html">Silent Starbucks Guardians</a></span>
+</nav>
+
+<main>
+    <h1>Oral History Project</h1>
+
+    <div id="gallery">
+		<div id="images">
+            <figure>
+                <img src="Images/uyghur4.jpg">
+                <figcaption>Heading to Pahatikeli Town for investigation</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/uyghur1.jpg">
+                <figcaption>Uncle Illham reading aloud the now-abolished Uyghur Latin alphabet</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/uyghur2.jpg">
+                <figcaption>Rusul's family had been waiting at the door for long.</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/uyghur3.png">
+                <figcaption>Grandma Ippet who had graduated from high school yet experienced illiteracy.</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="Images/uyghur5.jpg">
+                <figcaption>Rehim (68), a government-recognized intangible cultural heritage inheritor, demonstrates the press-moulding technique for making earthenware.</figcaption>
+            </figure>
+            <figure>
+                <figcaption style="text-align:right;">Note: <em>All names are pseudonyms</em></figcaption>
+            </figure>
+		</div>
+	</div>
+    
+</main>
+
+</body>
+</html>
