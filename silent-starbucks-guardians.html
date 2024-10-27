@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            overflow-x:hidden;
         }
 
         nav {
@@ -44,7 +45,6 @@
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3em;
-            text-transform: uppercase;
             text-align: center;
             margin: 120px 0 50px;
         }
@@ -68,9 +68,16 @@
             font-size:1.3em;
             max-width:80vw;
         }
+        p{
+            text-align:center;
+            font-size:1.3em;
+            width:80vw;
+            margin:0 10vw 30px;
+            
+        }
         video{
             width:80vw;
-            margin:10px 0;
+            margin:0 10vw 10px;
         }
         
         @media(min-width: 768px) {
@@ -97,14 +104,13 @@
             #images img{
                 width:28vw;
             }
+
             video{
-                margin:20px 7.5vw;
-                width:75vw;
+                width:70vw;
+                margin:30px 15vw 0px;
             }
-            .video figcaption{
-                margin-left:5vw;
-                text-align:center;
-            }
+            
+
         }
 
 
@@ -114,57 +120,49 @@
 <body>
 
 <nav>
-    <a href="index.html">Home</a><span class="large-only"> | 
-    <a href="oral-history-project.html">Oral History Project</a> | 
-    <a href="rma-preservation-project.html">Rma Preservation Project</a> | 
+    <a href="index.html">Home</a><span class="large-only">| 
+    <a href="oral-history-project.html">Oral History Project</a>| 
+    <a href="rma-preservation-project.html">Rma Preservation Project</a>| 
     <a href="silent-starbucks-guardians.html">Silent Starbucks Guardians</a></span>
 </nav>
 
 <main>
-    <h1>Silent Starbucks Guardians</h1>
+    <h1>Silent Starbucks Guardians in Shanghai</h1>
 
     <div id="gallery">
-		<div id="images">
-            <figure>
-                <img src="Images/Starbucks1.jpg">
-                <figcaption>Celebrating the opening of Shanghai's second Starbucks Signing Store</figcaption>
-            </figure>
-            <figure>
-                <img src="Images/Starbucks2.jpg">
-                <figcaption>Bulletin board of Starbucks Signing Store at Longsheng Plaza</figcaption>
-            </figure>
+		<div id="images"> 
             <figure>
                 <img src="Images/Starbucks3.jpg">
-                <figcaption>Listening to the voices of love by heart</figcaption>
-            </figure>
-            <figure>
-                <img src="Images/Starbucks4.JPG">
-                <figcaption>Silent Starbucks Guardians</figcaption>
+                <figcaption>"Listen to the voices of love by heart": A poster in front of Shanghai’s second Starbucks Signing Store</figcaption>
             </figure>
             <figure>
                 <img src="Images/Starbucks5.png">
-                <figcaption>Our logo</figcaption>
+                <figcaption>Our logo (designed by me)</figcaption>
             </figure>
+            
             <figure>
-                <img src="Images/Starbucks6.jpg">
-                <figcaption>Sign language diagrams for Starbucks Signing Store</figcaption>
-            </figure>
-            <figure>
-                <img src="Images/Starbucks7.jpg">
-                <figcaption>Sign language diagrams placed on the counter</figcaption>
+                <img src="Images/Starbucks4.JPG">
+                <figcaption>The Silent Starbucks Guardians</figcaption>
             </figure>
             <figure>
                 <img src="Images/Starbucks8.jpg">
                 <figcaption>Our team teaching customers sign language</figcaption>
             </figure>
+            <figure>
+                <img src="Images/Starbucks2.jpg">
+                <figcaption>Bulletin board of Starbucks Signing Store at Longsheng Plaza</figcaption>
+            </figure>     
+            <figure>
+                <img src="Images/Starbucks6.jpg">
+                <figcaption>I made these sign language diagrams for the Starbucks Signing Store</figcaption>
+            </figure>
+            
 		</div>
-        <figure class="video">
-            <video controls>
-            <source src="Images/Starbucks9.mp4" type="video/mp4" />
-            </video>
-            <figcaption>Training my team in sign language as deaf barista Fong watches us</p>
-        </figure>
 	</div>
+    <video controls>
+        <source src="Images/Starbucks7.mp4" type="video/mp4" />
+            </video>
+        <p>Training my team in sign language as a deaf barista watches us from behind</p>
 
 </main>
 
